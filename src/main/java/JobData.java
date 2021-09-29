@@ -105,6 +105,7 @@ public class JobData {
 
                 if (lowerDesc.contains(lowerVal)) {
                     jobs.add(row);
+                    break;
                 }
             }
         }
