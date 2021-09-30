@@ -100,8 +100,8 @@ public class JobData {
         for (HashMap<String, String> row : allJobs) {
             for (Map.Entry<String, String> rowDetail : row.entrySet()){
                 String description = rowDetail.getValue();
-                String lowerDesc = description.toLowerCase();
-                String lowerVal = value.toLowerCase();
+                String lowerDesc = " " + description.toLowerCase() + " ";
+                String lowerVal = " " + value.toLowerCase() + " ";
 
                 if (lowerDesc.contains(lowerVal)) {
                     jobs.add(row);
