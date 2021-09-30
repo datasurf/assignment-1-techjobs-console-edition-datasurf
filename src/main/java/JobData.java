@@ -101,11 +101,9 @@ public class JobData {
             for (Map.Entry<String, String> rowDetail : row.entrySet()){
                 String description = rowDetail.getValue();
                 String lowerDesc = description.toLowerCase();
-                String[] descSplit = lowerDesc.split(" ");
-                List<String> splitList = Arrays.asList(descSplit);
                 String lowerVal = value.toLowerCase();
 
-                if (splitList.contains(lowerVal)) {
+                if (lowerDesc.contains(lowerVal)) {
                     jobs.add(row);
                     break;
                 }
